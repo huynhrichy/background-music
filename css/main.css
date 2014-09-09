@@ -1,0 +1,180 @@
+* {
+	/* outline: #BDBDBD 1px dotted; */
+}
+
+body {
+	background-color: #E6E6E6;
+}
+
+.main {
+	color: #585858;
+	margin-top: 75px;
+	font-size: 16pt;
+
+
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	/* font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif; */
+}
+
+#title {
+	text-align: center;
+	font-weight: bold;
+	font-size: 48pt;
+	margin-bottom: 85px;
+	cursor: default;
+}
+
+#app, #progress {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+
+	text-align: center;
+	width: 450px;
+}
+
+#question, #choices li {
+/* 	padding-top: 10px;
+padding-bottom: 10px; */
+}
+
+#question {
+	font-size: 24pt;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	min-height: 64px;
+}
+
+#choices, #buttons {
+	padding-top: 10px;
+	padding-bottom: 15px;
+/* 	border-top: 1px solid #BDBDBD;
+border-bottom: 1px #BDBDBD; */
+
+}
+
+#choices li, #buttons li, #next {
+	font-size: 16pt;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	/* border: 1px solid #BDBDBD; */
+	cursor: pointer;
+
+	vertical-align: middle;
+
+	min-height: 21px;
+}
+
+#choices li:hover {
+}
+
+.select{
+	background-color: white;
+}
+
+#next, #buttons {
+	position: absolute;
+	right: 25.5%;
+	width: 100px;
+}
+
+#popups {
+}
+
+#next {
+	font-size: 24px;
+	top: 250px;
+	width: 100px;
+}
+
+#button-0 {
+	top: 8px;
+}
+
+#button-1 {
+	top: 49px;
+}
+
+#button-2 {
+	top: 90px;
+}
+
+#button-3 {
+	top: 131px;
+}
+
+#buttons {
+	top: 320px;
+	background-color: transparent;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#buttons li, #next {
+	border-radius: 5px;
+	width: 100px;
+	position: absolute;
+	display: none;
+}
+
+#buttons li {
+	padding-top: 9px;
+	padding-bottom: 9px;
+	margin-bottom: 1px;
+	margin-top: 1px;
+}
+
+.normal {
+	background-color: white;
+}
+
+.highlighted {
+	background-color: #D8D8D8;
+}
+
+.selected {
+	background-color: #BDBDBD;
+}
+
+.correct {
+	background-color: #9AFE2E;
+}
+
+
+.incorrect {
+	background-color: #FA5858;
+}
+
+.current {
+	background-color: white;
+}
+
+.remaining {
+	background-color: #BDBDBD;
+}
+
+#progress {
+	margin-top: 20px;
+	background-color: transparent;
+	cursor: default;
+}
+
+#unclickable {
+	cursor: default;
+}
+
+#progress div {
+	display: inline-block;
+	border-radius: 3px;
+	width: 25px;
+	height: 25px;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+#score {
+	font-weight: bold;
+}
