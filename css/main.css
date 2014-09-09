@@ -4,6 +4,10 @@
 
 body {
 	background-color: #E6E6E6;
+
+
+	/* background-color: #CEEFFF; */
+
 }
 
 .main {
@@ -14,15 +18,68 @@ body {
 
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	/* font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif; */
+	/* font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif; */
 }
 
-#title {
+.title {
 	text-align: center;
 	font-weight: bold;
 	font-size: 48pt;
 	margin-bottom: 85px;
 	cursor: default;
+
+	/* color: #662400; */
 }
+
+
+.app {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;	
+	text-align: center;
+
+
+	width: 425px;
+	height: 300px;
+}
+
+#city-input {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 16pt;
+	width: 80%;
+	vertical-align: middle;
+
+	margin-top: 30px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.ui-menu .ui-menu-item a, .ui-menu .ui-menu-item a.ui-state-hover, .ui-menu .ui-menu-item a.ui-state-active {
+	font-weight: normal;
+	margin: -1px;
+	text-align:left;
+	font-size: 14px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.ui-menu .ui-menu-item a.ui-state-hover {
+	background-color: #E6E6E6;
+}
+
+.ui-autocomplete-loading { 
+	background: white url("../images/ui-anim_basic_16x16.gif") right center no-repeat; 
+}
+
+.aside {
+	font-size: 12px;
+}
+
+/*
 
 #app, #progress {
 	-webkit-border-radius: 10px;
@@ -37,8 +94,6 @@ body {
 }
 
 #question, #choices li {
-/* 	padding-top: 10px;
-padding-bottom: 10px; */
 }
 
 #question {
@@ -51,8 +106,6 @@ padding-bottom: 10px; */
 #choices, #buttons {
 	padding-top: 10px;
 	padding-bottom: 15px;
-/* 	border-top: 1px solid #BDBDBD;
-border-bottom: 1px #BDBDBD; */
 
 }
 
@@ -60,7 +113,6 @@ border-bottom: 1px #BDBDBD; */
 	font-size: 16pt;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	/* border: 1px solid #BDBDBD; */
 	cursor: pointer;
 
 	vertical-align: middle;
@@ -178,3 +230,4 @@ border-bottom: 1px #BDBDBD; */
 #score {
 	font-weight: bold;
 }
+*/
