@@ -1,5 +1,11 @@
+html {
+	/* Keeps a scrollbar so a giant autocomplete list doesn't push elements around */
+	overflow: -moz-scrollbars-vertical; 
+	overflow-y: scroll;
+}
+
 * {
-	/* outline: #BDBDBD 1px dotted; */
+	/*outline: #BDBDBD 1px dotted;*/
 }
 
 body {
@@ -16,14 +22,14 @@ body {
 	font-size: 16pt;
 
 
-	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-	/* font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif; */
+	/*font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;*/
+	 font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif; 
 	/* font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif; */
 }
 
 .title {
 	text-align: center;
-	font-weight: bold;
+	/*font-weight: bold;*/
 	font-size: 48pt;
 	margin-bottom: 85px;
 	cursor: default;
@@ -40,17 +46,21 @@ body {
 	margin-left: auto;
 	margin-right: auto;	
 	text-align: center;
-
-
 	width: 425px;
 	height: 300px;
 }
 
 #city-input {
-	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	/*font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;*/
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif; 
+
 	font-size: 16pt;
 	width: 80%;
 	vertical-align: middle;
+	border: 1px solid gray;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 
 	margin-top: 30px;
 	padding-left: 5px;
@@ -64,7 +74,9 @@ body {
 	margin: -1px;
 	text-align:left;
 	font-size: 14px;
-	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif; 
+
+	/*font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;*/
 }
 
 .ui-menu .ui-menu-item a.ui-state-hover {
@@ -75,8 +87,22 @@ body {
 	background: white url("../images/ui-anim_basic_16x16.gif") right center no-repeat; 
 }
 
+.info {
+	margin-top: 46px;
+	font-size: 14pt;
+}
+
 .aside {
-	font-size: 12px;
+	margin-top: 40px;
+	font-size: 8pt;
+}
+
+#player {
+	margin-top: 14px;
+}
+
+.hidden {
+	display: none;
 }
 
 /*
