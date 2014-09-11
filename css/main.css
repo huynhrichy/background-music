@@ -88,12 +88,14 @@ body {
 }
 
 .info {
-	margin-top: 46px;
+	/* margin-top: 46px; */
+	margin-top: 75px;
 	font-size: 14pt;
 }
 
 .aside {
-	margin-top: 40px;
+	/* margin-top: 40px; */
+	margin-top: 5px;
 	font-size: 8pt;
 }
 
