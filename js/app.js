@@ -167,7 +167,7 @@ function getCityData() {
 
 $(document).ready(function() {
 
-//getLocation();
+getLocation();
 	
 	/* 
 	Geobyte's Ajax Autocomplete List Cities JSON-P API 
