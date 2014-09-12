@@ -5,7 +5,7 @@ html {
 }
 
 * {
-	/*outline: #BDBDBD 1px dotted;*/
+	/* outline: #BDBDBD 1px dotted; */
 }
 
 body {
@@ -19,7 +19,7 @@ body {
 .main {
 	color: #585858;
 	margin-top: 75px;
-	font-size: 16pt;
+	font-size: 14pt;
 
 
 	/*font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;*/
@@ -43,11 +43,16 @@ body {
 	-moz-border-radius: 10px;
 	border-radius: 10px;
 	background-color: white;
-	margin-left: auto;
-	margin-right: auto;	
-	text-align: center;
 	width: 425px;
 	height: 300px;
+
+/* 	position: absolute;
+margin: auto;
+top: 0; left: 0; bottom: 0; right: 0; */
+
+	margin-left: auto;
+	margin-right: auto;	
+	text-align: center; 
 }
 
 #city-input {
