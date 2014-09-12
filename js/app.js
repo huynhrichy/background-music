@@ -46,8 +46,14 @@ function stopVideo() {
 }
 
 function showPlayer() {
-	$('.info').addClass('hidden');
+	$('.info').hide().fadeOut();
 	$('#player').removeClass('hidden');
+
+	//$('#player').slideDown();
+
+	//$('.info').fadeOut().hide();
+	//$('#player').fadeIn().show();
+
 	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 }
 
@@ -126,8 +132,12 @@ function getCityData(city) {
 }
 
 $(document).ready(function() {
+
+	$('.main').hide().fadeIn("slow", function() {
+		getLocation();
+	});
+
 	// Attempts to use HTML5 Geolocation first
-	getLocation();
 	
 	// Geobyte's Ajax Autocomplete List Cities JSON-P API 
 	// Accesses Geobyte's free web services to get the list of cities
