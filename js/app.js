@@ -57,39 +57,104 @@ function showPlayer() {
 	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 }
 
+// Change background colour depending on weather or time of day
+function decideBackground(icon) {
+	if (icon.indexOf('d') != -1) {
+		//background
+		//#F2F2F2
+		//#FAFAFA
+
+		//title
+		//585858
+
+		//$('.title, footer').css('color', '#585858').fadeIn();
+		//$('body').css('background', '#F2F2F2').fadeIn();
+
+		$('.title, footer').animate({color: '#585858'}, 'slow');
+		$('body').animate({backgroundColor: '#F2F2F2'}, 'slow');
+
+/*		$('a').animate({color: '#00e'}, 'slow');
+		$('a:visited').animate({color: '#7B37BB'}, 'slow');
+		$('a:hover').animate({color: '#06e'}, 'slow');*/
+
+//		$('a').css('color', '#00e');
+/*		$('a:visited').css('color', '#7B37BB');
+		$('a:hover').css('color', '#06e');*/
+	}
+	else {
+		// background
+		//#585858
+		//#424242
+
+		//$('.title, footer').css('color', '#FAFAFA').fadeIn();
+		//$('body').css('background', '#585858').fadeIn();
+
+		$('.title, footer').animate({color: '#FAFAFA'}, 'slow');
+		$('body').animate({backgroundColor: '#585858'}, 'slow');
+/*
+		$('a').animate({color: '#7777EE'}, 'slow');
+		$('a:visited').animate({color: '#9B79BB'}, 'slow');
+		$('a:hover').animate({color: '#77ABEE'}, 'slow');
+*/
+//		$('a').css('color', '#7777EE');
+/*		$('a:visited').css('color', '#9B79BB');
+		$('a:hover').css('color', '#77ABEE');*/
+	}
+}
+
+function decideTheme(icon) {
+	decideBackground(icon);
+	decideSong(icon);
+}
+
 // Song choice based on icons for weather types for simplicity
 function decideSong(icon) {
 	//if icon is clear sky
-	if(icon == '01d' || icon == '01n') {
+	if (icon == '01d') {
 		//song = "ARDDZsIj5bE"; // besaid
 		song = "xwuXLqqw_gU"; // breezy
+
+	}
+
+	if (icon == '01n') {
+		song = "5yYMicbSf98"; // aruarian dance
 	}
 	
 	//if icon is clouds
-	if(icon == '02d' || icon == '02n' || icon == '03d' || icon == '03n' || icon == '04d' || icon == '04n') {
+	if (icon == '02d' || icon == '03d' || icon == '04d') {
 		song = "utt7YbfkJvg"; // beyond the darkness
+
 		
+	}
+
+	if (icon == '02n' || icon == '03n' || icon == '04n') {
+		song = "z0AWhPOn-XA"; // space between two world
 	}
 	
 	//if icon is rain
-	if(icon == '09d' || icon == '09n' || icon == '10d' || icon == '10n') {
+	if (icon == '09d' || icon == '10d') {
 		song = "-15xE5U9BCQ"; // calm before the storm
+
 	}
 	
+	if (icon == '09n' || icon == '10n') {
+		song = "NNYpCdoRGQI"; // fear
+	}
+
 	//if icon is thunderstorm
-	if(icon == '11d' || icon == '11n') {
-		song = "7Ax45TprB4A";
+	if (icon == '11d' || icon == '11n') {
+		song = "7Ax45TprB4A"; // thunder plains
 	}
 	
 	//if icon is snow
-	if(icon == '13d' || icon == '13n') {
+	if (icon == '13d' || icon == '13n') {
 		//song = "9jz644GeAdE"; // macalania woods
 		song = "UgsC3fk7E-k" // phantoms
 		
 	}
 	
 	//if icon is mist
-	if(icon == '50d' || icon == '50n') {
+	if (icon == '50d' || icon == '50n') {
 		song = "i_QxGtXSa9E"; // secret of the forest
 	}
 }
@@ -104,7 +169,8 @@ function getWeather() {
 		url: weatherURL
 	})
 	.done(function(data) {
-			decideSong(data.weather[0].icon);
+			//decideSong(data.weather[0].icon);
+			decideTheme(data.weather[0].icon);
 
 			if (!($('iframe').length)) {
 				showPlayer();	
@@ -132,12 +198,10 @@ function getCityData(city) {
 }
 
 $(document).ready(function() {
-
 	$('.main').hide().fadeIn("slow", function() {
+		// Attempts to use HTML5 Geolocation first
 		getLocation();
 	});
-
-	// Attempts to use HTML5 Geolocation first
 	
 	// Geobyte's Ajax Autocomplete List Cities JSON-P API 
 	// Accesses Geobyte's free web services to get the list of cities
