@@ -48,12 +48,6 @@ function stopVideo() {
 function showPlayer() {
 	$('.info').hide().fadeOut();
 	$('#player').removeClass('hidden');
-
-	//$('#player').slideDown();
-
-	//$('.info').fadeOut().hide();
-	//$('#player').fadeIn().show();
-
 	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 }
 
