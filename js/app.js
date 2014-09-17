@@ -61,9 +61,6 @@ function decideBackground(icon) {
 		//title
 		//585858
 
-		//$('.title, footer').css('color', '#585858').fadeIn();
-		//$('body').css('background', '#F2F2F2').fadeIn();
-
 		$('.title, footer').animate({color: '#585858'}, 'slow');
 		$('body').animate({backgroundColor: '#F2F2F2'}, 'slow');
 
@@ -79,9 +76,6 @@ function decideBackground(icon) {
 		// background
 		//#585858
 		//#424242
-
-		//$('.title, footer').css('color', '#FAFAFA').fadeIn();
-		//$('body').css('background', '#585858').fadeIn();
 
 		$('.title, footer').animate({color: '#FAFAFA'}, 'slow');
 		$('body').animate({backgroundColor: '#585858'}, 'slow');
