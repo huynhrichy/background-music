@@ -54,39 +54,12 @@ function showPlayer() {
 // Change background colour depending on weather or time of day
 function decideBackground(icon) {
 	if (icon.indexOf('d') != -1) {
-		//background
-		//#F2F2F2
-		//#FAFAFA
-
-		//title
-		//585858
-
 		$('.title, footer').animate({color: '#585858'}, 'slow');
 		$('body').animate({backgroundColor: '#F2F2F2'}, 'slow');
-
-/*		$('a').animate({color: '#00e'}, 'slow');
-		$('a:visited').animate({color: '#7B37BB'}, 'slow');
-		$('a:hover').animate({color: '#06e'}, 'slow');*/
-
-//		$('a').css('color', '#00e');
-/*		$('a:visited').css('color', '#7B37BB');
-		$('a:hover').css('color', '#06e');*/
 	}
 	else {
-		// background
-		//#585858
-		//#424242
-
 		$('.title, footer').animate({color: '#FAFAFA'}, 'slow');
 		$('body').animate({backgroundColor: '#585858'}, 'slow');
-/*
-		$('a').animate({color: '#7777EE'}, 'slow');
-		$('a:visited').animate({color: '#9B79BB'}, 'slow');
-		$('a:hover').animate({color: '#77ABEE'}, 'slow');
-*/
-//		$('a').css('color', '#7777EE');
-/*		$('a:visited').css('color', '#9B79BB');
-		$('a:hover').css('color', '#77ABEE');*/
 	}
 }
 
