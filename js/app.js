@@ -1,7 +1,6 @@
 var song = ""; // YouTube video ID
 var latitude; 
 var longitude; 
-var weatherType = "";
 
 // Endpoint for the OpenWeatherMap API - string to be appended with location info
 var weatherURL = "http://api.openweathermap.org/data/2.5/weather?";
