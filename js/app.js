@@ -71,9 +71,7 @@ function decideTheme(icon) {
 function decideSong(icon) {
 	//if icon is clear sky
 	if (icon == '01d') {
-		//song = "ARDDZsIj5bE"; // besaid
 		song = "xwuXLqqw_gU"; // breezy
-
 	}
 
 	if (icon == '01n') {
@@ -108,7 +106,6 @@ function decideSong(icon) {
 	
 	//if icon is snow
 	if (icon == '13d' || icon == '13n') {
-		//song = "9jz644GeAdE"; // macalania woods
 		song = "UgsC3fk7E-k" // phantoms
 		
 	}
@@ -129,7 +126,6 @@ function getWeather() {
 		url: weatherURL
 	})
 	.done(function(data) {
-			//decideSong(data.weather[0].icon);
 			decideTheme(data.weather[0].icon);
 
 			if (!($('iframe').length)) {
