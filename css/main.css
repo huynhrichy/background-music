@@ -126,6 +126,8 @@ footer {
 a {
 	color: #00e;
 	text-decoration: none;
+	-webkit-transition: color 0.5s ease;
+	transition: color 0.5s ease;
 }
 
 a:visited {
