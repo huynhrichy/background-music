@@ -136,6 +136,7 @@ function getWeather() {
 			}
 	})
 	.fail(function(jqXHR, error, errorThrown) {
+		console.log(error);
 	});
 }
 
@@ -150,6 +151,7 @@ function getCityData(city) {
 		getWeather();
 	})
 	.fail(function(jqXHR, error, errorThrown) {
+		console.log(error);
 	});
 }
 
