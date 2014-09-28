@@ -67,6 +67,10 @@ function decideTheme(icon) {
 	decideSong(icon);
 }
 
+function decideTimeOfDay() {
+
+}
+
 // Song choice based on icons for weather types for simplicity
 function decideSong(icon) {
 	//if icon is clear sky
@@ -127,6 +131,7 @@ function getWeather() {
 	})
 	.done(function(data) {
 			decideTheme(data.weather[0].icon);
+			//decideTimeOfDay
 
 			if (!($('iframe').length)) {
 				showPlayer();	
