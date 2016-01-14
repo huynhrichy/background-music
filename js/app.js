@@ -4,6 +4,7 @@ var longitude;
 
 // Endpoint for the OpenWeatherMap API - string to be appended with location info
 var weatherURL = "http://api.openweathermap.org/data/2.5/weather?";
+var weatherAPIKey = "18e8fb5394d1318c5c8cb824ba2b6da4";
 
 // YouTube Player API
 // Creates an iframe for the DOM to embed the player
@@ -122,7 +123,7 @@ function decideSong(icon) {
 
 // Uses OpenWeatherMap API to get weather information for the given coordinates
 function getWeather() {
-	weatherURL = "http://api.openweathermap.org/data/2.5/weather?lat=" + latitude + "&lon=" + longitude;
+	weatherURL = "http://api.openweathermap.org/data/2.5/weather?lat=" + latitude + "&lon=" + longitude + "&APPID=" + weatherAPIKey;
 
 	var result = $.ajax({
 		type: 'GET',
