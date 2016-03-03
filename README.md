@@ -1,5 +1,5 @@
 # background-music
-Enter your location, and The Background Music App will play some music to suit the weather and time of day of your whereabouts.
+Enter your location, and The Background Music App will play some music to suit the weather and time of day of your whereabouts. Caveat: I chose the music, because I have the best taste in music. Objectively.
 
 Three different APIs were combined in the building of the app. Geobytes was used to identify one's city using an autocompleting form. OpenWeatherMap helped with pulling weather information about a given city to be used for selecting music. Finally, the YouTube API enabled the embedding of a video player, looping a chosen track based on the information the app received.
 
